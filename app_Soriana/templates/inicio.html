@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}Inicio - Soriana{% endblock %}
+
+{% block content %}
+<div class="jumbotron text-center bg-white p-5 rounded shadow-sm">
+    <h1 class="display-4 text-primary">¡Bienvenido al Sistema de Administración Soriana!</h1>
+    <p class="lead mt-4">Aquí podrás gestionar eficientemente a tus empleados, clientes y ventas.</p>
+    <hr class="my-4">
+    <p>Utiliza el menú de navegación para acceder a las diferentes secciones del sistema.</p>
+    <a class="btn btn-primary btn-lg mt-3" href="{% url 'ver_empleados' %}" role="button">Ver Empleados</a>
+</div>
+
+<div class="row mt-5">
+    <div class="col-md-8 offset-md-2">
+        <h2 class="text-center text-secondary mb-4">Acerca de Soriana</h2>
+        <p class="text-justify">
+            Soriana es una de las cadenas de supermercados y tiendas departamentales más grandes de México. Fundada en 1968 en Torreón, Coahuila, ha crecido hasta convertirse en un pilar del comercio minorista, ofreciendo una amplia gama de productos que van desde alimentos y abarrotes hasta ropa, electrónica y productos para el hogar. Su compromiso se centra en ofrecer calidad, variedad y precios competitivos a sus clientes, consolidándose como una opción preferida para las familias mexicanas. Este sistema busca apoyar la gestión interna de sus recursos humanos y comerciales.
+        </p>
+        <div class="text-center mt-4">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Fachada_Soriana_H%C3%ADper.JPG" class="img-fluid rounded shadow" alt="Fachada de Soriana">
+            <small class="text-muted d-block mt-2">Imagen de una tienda Soriana.</small>
+        </div>
+    </div>
+</div>
+{% endblock %}
